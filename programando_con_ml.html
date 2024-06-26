@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Programando con ML | ML con Pictoblox </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ML con Pictoblox</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li id="active"><a href="programando_con_ml.html" class="active no-ch">Programando con ML</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>2</strong></span>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Programando con ML</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id138">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">A.- Iniciamos Machine Learning en Pictoblox</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta138_128_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #000000;">1.- Dentro de <strong>Pictoblox</strong> tenemos que incorporar la <strong><span style="color: #800080;">extensión </span></strong>de <strong>ML, haciendo clic en <img src="img0.3.png" width="53" height="39" alt="" />. </strong>Por el momento<strong><span style="color: #ff0000; font-size: 14pt;"> no vamos a conectar</span> <span style="color: #ff6600;">PonchoBot</span> </strong>al puerto USB de nuestra PC, <span style="font-size: 14pt;"><strong><span style="color: #ff0000;">ni seleccionar la placa</span></strong></span> <strong>Arduino Nano</strong>.</span></p>
+<table border="1" style="height: 214px; width: 52.2135%; margin-left: auto; margin-right: auto;" height="214">
+<tbody>
+<tr>
+<td style="width: 20.3784%;"><img src="img1.png" width="173" height="177" alt="" /></td>
+<td style="width: 58.6467%;">
+<p style="text-align: center;">En la paleta de categorías se nos habilita el botón para dirigirnos a la web donde entrenar el modelo:</p>
+<p><img src="img2.png" width="330" height="107" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;">2.- Dentro de la nueva página hacemos clic en <span style="color: #ffffff; background-color: #800080;">Create New Project</span></p>
+<p style="text-align: center;"><span style="color: #ffffff; background-color: #800080;"><img src="img3.png" width="556" height="92" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: left;"><span style="color: #ffffff; background-color: #800080;"></span>3.- Creamos un nuevo proyecto, colocando su nombre, por ejemplo <em>Posiciones de cabeza,</em> y una descripción (opcional). Seleccionamos <strong>Image Classifier</strong> y hacemos clic en el botón de <strong><span style="color: #ffffff; background-color: #800080;">Create Project</span>.</strong></p>
+<p style="text-align: center;"><img src="img4.png" width="344" height="234" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><img src="img5.png" width="116" height="59" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: left;">4.- Llegó la hora de crear las clases/categorías de las imágenes. En nuestro caso vamos a crear 3 clases: mirando al frente (la llamamos 90, por los grados del servo), mirando a la derecha (la llamamos 45) y mirando a la izquierda (la llamamos 135). Hacemos clic en <span style="color: #ffffff; background-color: #ff6600;">class1</span> y escribimos 90, luego en <span style="color: #ffffff; background-color: #ff6600;">class2</span> y escribimos 45. Por último, para agregar la tercera clase, hacemos clic en Add class y la llamamos 135. </p>
+<p style="text-align: center;"><img src="img6.png" width="604" height="322" alt="" /></p>
+<p style="text-align: left;">5.- Nos aseguramos tener seleccionada la cámara con la que vamos a tomar las imágenes, para entrenar el modelo:</p>
+<p style="text-align: left;"><img src="img7.1.png" width="426" height="162" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id139">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">B.- Comenzamos con la captura de imágenes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta139_129_2" class="block iDevice_content">
+<div class="exe-text"><p>1.- Vamos a <strong>configurar</strong> nuestra toma de imágenes, para realizar una captura en lote con <strong>un solo disparo</strong> (<em>y no una por una</em>):</p>
+<table border="1" style="height: 299px; width: 93.0194%; background-color: #7962c4;">
+<tbody>
+<tr style="height: 19px;">
+<td style="width: 23.5946%; height: 19px; text-align: center;">
+<p><span style="color: #ffffff;"><strong>1°</strong></span></p>
+</td>
+<td style="width: 20.6757%; height: 19px; text-align: center;">
+<p><span style="color: #ffffff;"><strong>2°</strong></span></p>
+</td>
+<td style="width: 23.2702%; height: 19px; text-align: center;">
+<p><span style="color: #ffffff;"><strong>3°</strong></span></p>
+</td>
+<td style="width: 25.4791%; height: 19px; text-align: center;">
+<p><span style="color: #ffffff;"><strong>4°</strong></span></p>
+</td>
+</tr>
+<tr style="height: 280px;">
+<td style="width: 23.5946%; height: 280px;">
+<p><img src="img0.5.png" width="211" height="159" alt="" /></p>
+<p><span style="color: #ffffff;">Clic en <strong>Webcam</strong></span></p>
+</td>
+<td style="width: 20.6757%; height: 280px;">
+<p><img src="img1.1.png" width="154" height="161" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ffffff;">Clic en la ruedita/<strong>engranaje</strong></span></p>
+</td>
+<td style="width: 23.2702%; height: 280px;">
+<p><img src="img2.1.png" width="211" height="142" alt="" /></p>
+<p><span style="color: #ffffff;">Activamos <strong>Hold to Record</strong></span></p>
+</td>
+<td style="width: 25.4791%; height: 280px;">
+<p><img src="img3.1.png" width="193" height="183" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ffffff;">Aumentamos los FPS a 30 y  hacemos clic en</span> <span style="color: #ffffff; background-color: #800080;"><strong>Save Setting</strong></span> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2.- Ahora al seleccionar <strong>Webcam</strong>, con nuestra imagen en pantalla, hacemos clic en <span style="color: #ffffff; background-color: #800080;">Record 4 Seconds</span>, para tomar unas 125 fotos (durante los 4 segundos que dura la toma), donde podemos acercarnos y alejarnos un poco, para evitar los <strong>sesgos</strong> en el modelo y que no reconozca la imagen, por no estar siempre a la misma distancia a la cámara:</p>
+<table border="1" style="width: 74.9187%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 20.3784%;"><img src="img4.1.png" width="161" height="167" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 54.5405%;"><img src="img5.2.png" width="487" height="242" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p>3.- Procedemos de igual manera con las otras dos clases, para luego continuar con el paso correspondiente al <span style="color: #ffffff; background-color: #800080;"><strong>Train Model</strong></span>. Simplemente hacemos clic en el botón y esperamos a que se complete el proceso (<span style="color: #00ff00;"><strong>Training Completed</strong></span>)</p>
+<table border="1" style="width: 81.405%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 35.4054%;"><img src="img6.1.png" width="298" height="152" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 46%;"><img src="img7.2.png" width="409" height="206" alt="" /></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">C.- Probar y exportar el modelo ML</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_143_2" class="block iDevice_content">
+<div class="exe-text"><p>Llegó la hora de <strong>probar el modelo</strong> para ver si distingue las imágenes según las <strong>clases</strong> creadas:</p>
+<table border="1" style="width: 81.5218%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 23.1481%;">
+<p><img src="img0.6.png" width="211" height="163" alt="" /></p>
+<p>Clic en Webcam</p>
+</td>
+<td style="width: 25.8737%;">
+<p><img src="img1.2.png" width="211" height="312" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Observamos el porcentaje de reconocimiento de c/clase.</p>
+</td>
+<td style="width: 26.5351%;"><img src="img2.2.png" width="211" height="321" alt="" style="display: block; margin-left: auto; margin-right: auto;" />
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Si vemos que <strong>reconoce</strong> en un alto porcentaje (<strong>&gt;90</strong>) cada clase, podemos exportar el modelo a <span style="color: #800080;"><strong>Pictoblox</strong></span>. Si no es así, debemos seguir tomando imágenes en <strong>la clase que no es adecuadamente reconocida</strong> (<em>se pueden borrar las imágenes capturadas y volver a tomar nuevas</em>), y nuevamente entrenar (Training) y probar el modelo (Testing).</p>
+<table border="1" style="width: 83.5619%;">
+<tbody>
+<tr>
+<td style="width: 30%;"><img src="img3.2.png" width="240" height="87" alt="" /></td>
+<td style="width: 53.5632%;">Hacemos clic en <span style="color: #800080;">Export Model</span> y luego en Block. De esta manera se habilitan los bloques de ML dentro de <strong>Pictoblox.</strong> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">D.- A programar con ML</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_144_2" class="block iDevice_content">
+<div class="exe-text"><p>Con el modelo <strong>adecuadamente entrenado</strong>, podemos utilizarlo para diferentes cuestiones. En este caso lo vamos a usar para controlar el servo de medio giro, que <span style="color: #ff6600;"><strong>PonchoBot</strong></span> tiene en su parte delantera.</p>
+<p><span style="color: #ff0000; font-size: 18pt;"><strong>Superimportante: </strong><span style="color: #000000;">conectamos <strong><span style="color: #ff6600;">PonchoBot</span></strong> al usb de la PC, hacemos clic en <span style="color: #ffffff; background-color: #800080;"> Board </span> y seleccionamos <strong>Arduino Uno. </strong><strong><span style="color: #ff0000;">No seleccionar</span> Arduino Nano</strong>, porque se deshabilitan los bloques de ML.</span></span></p>
+<p><span style="color: #ff0000; font-size: 18pt;"><span style="color: #000000;"><img src="img2.5.png" width="397" height="281" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span style="color: #ff0000; font-size: 12pt;"><span style="color: #000000;">Luego seleccionar el puerto COM igual que siempre:</span></span></p>
+<p><span style="color: #ff0000; font-size: 12pt;"><span style="color: #000000;"><img src="img3.5.png" width="306" height="203" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<div class="exe-fx exe-accordion">
+<h2>Los bloques de ML Environment</h2>
+<p>Cuando estamos usando la webcam en <strong>Pictoblox </strong>o el micrófono, debemos comprobar que esté adecuadamente seleccionada. Para ello dentro del programa, debemos hacer clic en la <strong>ruedita/engranaje</strong> de configuración y seleccionar la opción <span style="color: #ffffff; background-color: #800080;"><strong>Audio &amp; Video Settings</strong></span>:</p>
+<p><img src="img4.2.png" width="213" height="235" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Allí seleccionamos la webcam con la que tomaremos las imágenes, que puede ser la incorporada o la cámara de un celular (Windows Virtual Camera):</p>
+<p><img src="img5.1.png" width="261" height="302" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Una vez realizada la comprobación, ya podemos usar los bloques de programa para activar la webcam.</p>
+<table border="1" style="width: 99.998%; height: 468px;">
+<tbody>
+<tr style="height: 468px;">
+<td style="width: 33.1551%; height: 468px;">
+<p></p>
+<p><img src="img0.png" width="233" height="457" alt="" /></p>
+</td>
+<td style="width: 33.4224%; height: 468px;"><img src="img1.6.png" width="243" height="404" alt="" /></td>
+<td style="width: 33.4224%; height: 468px;">En el ejemplo de programación, se comienza ubicando el servo, conectado al <strong>pin 9</strong>, en 90° (mirando al frente). Se habilita la webcam para que tome  imágenes -en un bucle (<span style="color: #ffffff; background-color: #ff9900;">por siempre</span>) se <span style="color: #ffffff; background-color: #ff0000;">analiza la imagen</span> que está siendo tomada por la webcam- y se pregunte por cada una de las clases (el orden de las consultas puede variar). Dentro de cada condicional (<span style="color: #ffffff; background-color: #ff9900;">si ... entonces</span>) se coloca el bloque para <span style="color: #ffffff; background-color: #339966;">mover el servo</span> los ángulos de <strong>90-135-45 respectivamente</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2>Experimentar para aprender</h2>
+<p>El ejemplo propuesto, es al solo efecto de <strong>disparar nuevas ideas</strong>, que sean <strong>más significativas y útiles</strong>, según la realidad de cada uno de los usuarios.</p>
+<ul>
+<li>Se pueden entrenar diferentes modelos, según diferentes imágenes, para controlar el desplazamiento de <span style="color: #ff6600;"><strong>PonchoBot</strong></span>, sus led, su buzzer, etc.</li>
+<li>Si el modelo entrenado no es adecuadamente reconocido, se puede intentar mejorarlo cambiando alguno de los valores por defecto:</li>
+</ul>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 33.4586%;"><img src="img6.2.png" width="258" height="572" alt="" /></td>
+<td style="width: 66.5414%;">
+<p><span style="color: #800080;"><strong>Epochs:</strong> </span>Una época significa que todas y cada una de las muestras del conjunto de datos de entrenamiento han pasado por el modelo de entrenamiento al menos una vez. Si sus épocas están configuradas en 50, por ejemplo, significa que el modelo que está entrenando funcionará en todo el conjunto de datos de entrenamiento 50 veces. Generalmente, cuanto mayor sea el número, mejor aprenderá su modelo a predecir los datos. Probablemente desee modificar (generalmente aumentar) este número hasta que obtenga buenos resultados predictivos con su modelo. Podemos ampliar el valor de 10 a 50/100.</p>
+<p><span style="color: #800080;"><strong>Batch Size:</strong></span> Un lote es un conjunto de muestras utilizadas en una iteración de entrenamiento. Por ejemplo, digamos que tiene 80 imágenes y elige un tamaño de lote de 16. Esto significa que los datos se dividirán en 80/16 = 5 lotes. Una vez que los 5 lotes hayan pasado por el modelo, se completará exactamente una época. Probablemente no necesites modificar este número para obtener buenos resultados de entrenamiento. </p>
+<p><span style="color: #800080;"><strong>Learning Rate:</strong></span>  ¡Tenga cuidado al modificar este número! Incluso las pequeñas diferencias pueden tener enormes efectos en el aprendizaje de su modelo. Mejor cambiar los otros valores o aumentar el número de imágenes, que cambiar este valor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong><span style="color: #ff0000;">A experimentar y aprender!!</span></strong></span></p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id140">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Fichero adjunto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta140_82" class="block iDevice_content">
+<p><a href="https://drive.google.com/uc?export=download&amp;id=1AXOsBocb8QoKojduSgbRRQN4KXpyw9Id" title="[.sb3 - 67 KB]">Descargar programa de ejemplo</a><span class="exe-link-data file-size"> (.sb3 - 67 <abbr title="KiloBytes" lang="en">KB</abbr>)</span></p>
+</div>
+<ul class='exeFileList'></ul></div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>2</strong></span>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
